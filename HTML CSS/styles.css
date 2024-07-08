@@ -1,0 +1,83 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Card Container */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    background: #f3f3f3;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.name {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.bio {
+    margin: 10px 0;
+    color: #777;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    transition: background 0.3s;
+}
+
+.social-link:hover {
+    background: #555;
+}
+
+@media (max-width: 600px) {
+    .card {
+        margin: 20px;
+    }
+}
